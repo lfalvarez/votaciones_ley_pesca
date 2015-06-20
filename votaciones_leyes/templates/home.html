@@ -36,7 +36,7 @@
         <h1>Senadores</h1>
         <ul>
             {% for person in object_list %}
-                <li><a href="{% url 'votaciones' id=person.id %}">{{ person.name }}</a></li>
+                <li><a href="{% url 'votaciones' slug=person.id %}">{{ person.name }}</a></li>
             {% empty %}
                 <li>No persons yet.</li>
             {% endfor %}
