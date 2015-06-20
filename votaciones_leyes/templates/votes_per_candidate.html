@@ -1,0 +1,8 @@
+{% if votes %}
+<ul>
+    {% for vote in votes %}
+    <li>{{vote.option}}</li>
+    {% endfor %}
+</ul>
+{% else %}
+{% endif %}

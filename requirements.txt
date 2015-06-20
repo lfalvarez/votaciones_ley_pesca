@@ -2,3 +2,8 @@
 #	requirements.txt in the root directory of a project.
 -r requirements/production.txt
 -e git+https://github.com/openpolis/django-popolo.git#egg=django_popolo-dev
+unidecode
+unicodecsv
+django-extensions
+ipython
+PyYaml

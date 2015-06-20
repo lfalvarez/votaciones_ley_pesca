@@ -28,8 +28,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'popolo',
+    'votaciones_leyes',
     'scrapper',
+
 )
 
 PROJECT_APPS = ()
