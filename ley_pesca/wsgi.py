@@ -14,8 +14,12 @@ SITE_ROOT = dirname(dirname(abspath(__file__)))
 path.append(SITE_ROOT)
 
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ley_pesca.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ley_pesca.settings.production")
 
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
+
+from dj_static import Cling
+
+application = Cling(get_wsgi_application())

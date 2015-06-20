@@ -1,0 +1,1 @@
+web: gunicorn ley_pesca.wsgi --log-file -
